@@ -22,15 +22,15 @@ app.get("/", (req, res) => {
     msg: "This is home page",
   });
 });
-app.get("/about-us", (req, res) => {
-  res.render("about-us", { msg: null });
+app.get("/room-listing", (req, res) => {
+  res.render("room-listing", { msg: null });
 });
-app.get("/peoples", (req, res) => {
-  res.render("peoples", {
+app.get("/user-registration", (req, res) => {
+  res.render("user-registration", {
     peoples: [{ name: "jhon smith" }, { name: "jhonny Bravo" }],
   });
 });
-// port where app is served
+
 app.listen(3000, () => {
   console.log("The web server has started on port 3000");
 });
