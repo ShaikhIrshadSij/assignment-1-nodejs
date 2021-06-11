@@ -1,5 +1,31 @@
 {{> header}}
-<div class="container">
-  <h1>Hello World from Handlebars</h1>
-  <p>{{msg}}</p>
+
+<style>
+  .wrap-home-image{
+   height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://wallpaperaccess.com/full/185328.jpg);
+    position: relative;
+  }
+
+  .info-title{
+    position: absolute;
+    width: 30%;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-weight: bold;
+  }
+</style>
+
+<div class="container-fluid p-0">
+  <div class="wrap-home-image">
+    <h3 class="info-title">Introducing 100+
+upgrades across
+our entire service</h3>
+  </div>
 </div>
+
+{{> footer}}

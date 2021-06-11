@@ -23,7 +23,8 @@ app.get("/", (req, res) => {
   });
 });
 app.get("/room-listing", (req, res) => {
-  res.render("room-listing", { msg: null });
+  const counter = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  res.render("room-listing", { counter: counter });
 });
 app.get("/user-registration", (req, res) => {
   res.render("user-registration", {

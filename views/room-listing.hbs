@@ -1,11 +1,45 @@
 {{> header}}
-<div class="container">
-  <h1>About Us</h1>
-  <p>
-    {{#if msg}}
-      {{msg}}
-    {{else}}
-      No message was found
-    {{/if}}  
-  </p>
+<style>
+  .air-image .card-img-top .product-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .air-image .card-img-top {
+    position: relative;
+    padding-top: 75%;
+}
+
+.hoverable, .hoverable:hover {
+    -webkit-transition: all .55s ease-in-out;
+    transition: all .55s ease-in-out;
+}
+
+.hoverable:hover{
+ box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+</style>
+
+<div class="container" style="padding-top: 8rem;">
+  <div class="row">
+    {{#each counter}}
+      <div class="col-md-4 d-flex align-items-stretch mb-3 air-image">
+        <div class="card d-flex flex-column rounded pointer hoverable white w-100">
+          <div class="card-img-top">
+            <div class="product-image h-100 w-100 rounded-top" style="background-image: url('https://source.unsplash.com/random/200x200'); background-size: cover;"></div>
+          </div>
+          <div class="card-body flex-fill d-flex flex-column">
+            <p class="mb-0 font-weight-bold">Exodus Appartment</p>
+            <p class="mb-0">Room with 2 Beds</p>
+            <p class="mb-0">$150 CAD/night</p>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
 </div>
+
+{{> footer}}
