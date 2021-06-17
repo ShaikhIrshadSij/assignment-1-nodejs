@@ -18,12 +18,72 @@
     font-size: 50px;
     font-weight: bold;
   }
+
+  .hoverable{
+    box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  }
+
+  .promotional-section{
+    position: relative;
+  }
+
+  .promotional-text{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    width: 400px;
+    transform: translateY(-50%);
+  }
 </style>
 
 <div class="container-fluid p-0">
   <div class="wrap-home-image">
     <h3 class="info-title">
       Introducing 100+ upgrades across our entire service</h3>
+  </div>
+  <div class="col-md-12 mt-3">
+    <h2 class="text-center">Book your room: </h2>
+    <div class="col-md-4 mx-auto">
+      <div class="card hoverable">
+      <div class="card-body">
+        <div class="col-md-12">
+          <label>Choose City</label>
+          <select class="form-control">
+            <option value="">Select City</option>
+            <option value="Toronto, Ontario">Toronto, Ontario</option>
+            <option value="Montreal, Quebec">Montreal, Quebec</option>
+            <option value="Vancouver, British Columbia">Vancouver, British Columbia</option>
+            <option value="Calgary, Alberta">Calgary, Alberta</option>
+          </select>
+        </div>
+        <div class="col-md-12 mt-2">
+          <label>Check-in Date</label>
+          <input type="date" class="form-control" />
+        </div>
+        <div class="col-md-12 mt-2">
+          <label>Check-out Date</label>
+          <input type="date" class="form-control" />
+        </div>
+        <div class="col-md-12 mt-2">
+          <label>No of guests</label>
+          <input type="number" class="form-control" />
+        </div>
+        <div class="col-md-12 mt-4 text-right">
+          <button class="btn btn-success">Search</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="w-100 promotional-section mt-5 text-center">
+    <h2 class="promotional-text">Introducing 100+ upgrades across our entire service </h2>
+    <picture>
+      <source srcset="https://a0.muscache.com/im/pictures/8af8afe5-7e67-4dd1-8810-2c957e760f71.jpg?im_w=1440 1x, https://a0.muscache.com/im/pictures/8af8afe5-7e67-4dd1-8810-2c957e760f71.jpg?im_w=2560 2x" media="(min-width: 1440px)">
+      <source srcset="https://a0.muscache.com/im/pictures/b46eb0a5-1e14-451a-b843-daa313778dca.jpg?im_w=720 1x, https://a0.muscache.com/im/pictures/b46eb0a5-1e14-451a-b843-daa313778dca.jpg?im_w=1440 2x" media="(min-width: 744px)">
+      <source srcset="https://a0.muscache.com/im/pictures/8af8afe5-7e67-4dd1-8810-2c957e760f71.jpg?im_w=720 1x, https://a0.muscache.com/im/pictures/8af8afe5-7e67-4dd1-8810-2c957e760f71.jpg?im_w=1440 2x" media="(min-width: 744px)">
+      <source srcset="https://a0.muscache.com/im/pictures/c4e551a5-c956-46bb-9d18-29387b188a46.jpg?im_w=320 1x, https://a0.muscache.com/im/pictures/c4e551a5-c956-46bb-9d18-29387b188a46.jpg?im_w=720 2x">
+      <img class="w-100" src="https://a0.muscache.com/im/pictures/c4e551a5-c956-46bb-9d18-29387b188a46.jpg?im_q=medq&amp;im_w=720">
+      </picture>
   </div>
 </div>
 
