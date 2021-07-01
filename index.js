@@ -32,8 +32,9 @@ app.get('/user-registration', (req, res) => {
   })
 })
 
-const port = process.env.PORT || 3000
+app.use('/responsive', express.static(__dirname + '/public/css'))
 
+const port = process.env.PORT || 3000
 app.listen(port, function () {
   console.log('The web server has started on port 3000')
 })
